@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroGlass Pro — Tomorrow, in sight</title>
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Introducing AeroGlass Pro. A premium augmented reality headset with dual 4K micro-OLED displays, spatial audio, and Aero G1+R1 processing. Step into the future of spatial computing.">
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Transparent Glassmorphic Navigation -->
+    <header class="navbar" id="main-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="logo-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="url(#logo-grad)" stroke-width="2"/>
+                    <path d="M7 13L12 8L17 13" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0071e3" />
+                            <stop offset="1" stop-color="#a134eb" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Aero</span>
+            </a>
+            <nav class="nav-links" id="navigation-menu">
+                <a href="#features" class="nav-item">Features</a>
+                <a href="#aeroos" class="nav-item">AeroOS</a>
+                <a href="#specs" class="nav-item">Tech Specs</a>
+                <a href="#preorder" class="nav-item">Design</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#preorder" class="btn btn-nav" id="nav-action-cta">Pre-order</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-background-glow"></div>
+            <div class="container hero-container">
+                <span class="hero-badge fade-in">Available Fall 2026</span>
+                <h1 class="hero-title fade-in">Tomorrow, in sight.</h1>
+                <p class="hero-subtitle fade-in">
+                    AeroGlass Pro blends digital content seamlessly with your physical space. 
+                    Redefining how you work, collaborate, and create.
+                </p>
+                <div class="hero-actions fade-in">
+                    <a href="#preorder" class="btn btn-primary" id="hero-cta-btn">Reserve AeroGlass</a>
+                    <a href="#aeroos" class="btn btn-secondary" id="hero-secondary-btn">Explore AeroOS &rarr;</a>
+                </div>
+
+                <!-- Custom High-Fidelity SVG Glasses Mockup -->
+                <div class="hero-graphic-container fade-in">
+                    <div class="hero-glow-under"></div>
+                    <svg class="headset-svg" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <!-- Metallic frame gradient -->
+                            <linearGradient id="metal-grad" x1="100" y1="100" x2="700" y2="300" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#2d2d30" />
+                                <stop offset="30%" stop-color="#4d4d50" />
+                                <stop offset="50%" stop-color="#7d7d82" />
+                                <stop offset="70%" stop-color="#4d4d50" />
+                                <stop offset="100%" stop-color="#2d2d30" />
+                            </linearGradient>
+                            <!-- Visor gradient glass reflection -->
+                            <linearGradient id="visor-grad" x1="200" y1="80" x2="600" y2="320" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#0071e3" stop-opacity="0.85" />
+                                <stop offset="40%" stop-color="#4a154b" stop-opacity="0.8" />
+                                <stop offset="70%" stop-color="#1e0b36" stop-opacity="0.9" />
+                                <stop offset="100%" stop-color="#050014" stop-opacity="0.95" />
+                            </linearGradient>
+                            <!-- Lens glow gradient -->
+                            <radialGradient id="lens-glow-left" cx="280" cy="180" r="120" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.4" />
+                                <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+                            </radialGradient>
+                            <radialGradient id="lens-glow-right" cx="520" cy="180" r="120" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#9b51e0" stop-opacity="0.4" />
+                                <stop offset="100%" stop-color="#9b51e0" stop-opacity="0" />
+                            </radialGradient>
+                            <!-- Visor border glow -->
+                            <linearGradient id="glow-border" x1="200" y1="80" x2="600" y2="320" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+                                <stop offset="50%" stop-color="#9b51e0" stop-opacity="0.5" />
+                                <stop offset="100%" stop-color="#0071e3" stop-opacity="0.8" />
+                            </linearGradient>
+                            <!-- Drop Shadow Filter -->
+                            <filter id="shadow" x="150" y="50" width="500" height="300" filterUnits="userSpaceOnUse">
+                                <feDropShadow dx="0" dy="15" stdDeviation="25" flood-color="#0071e3" flood-opacity="0.3"/>
+                            </filter>
+                        </defs>
+
+                        <!-- Back Headband Strap -->
+                        <path d="M 180 180 C 180 160, 200 130, 230 120 L 250 125 C 240 140, 220 160, 220 180 C 220 200, 240 220, 250 235 L 230 240 C 200 230, 180 200, 180 180 Z" fill="#2d2d30" opacity="0.8"/>
+                        <path d="M 620 180 C 620 160, 600 130, 570 120 L 550 125 C 560 140, 580 160, 580 180 C 580 200, 560 220, 550 235 L 570 240 C 600 230, 620 200, 620 180 Z" fill="#2d2d30" opacity="0.8"/>
+                        
+                        <!-- Soft Headband Inner Mesh -->
+                        <path d="M 230 120 C 300 110, 500 110, 570 120 C 580 150, 580 210, 570 240 C 500 250, 300 250, 230 240 C 220 210, 220 150, 230 120 Z" fill="#161617"/>
+                        <!-- Headband Ribbed Texture (Lines) -->
+                        <path d="M 270 116 L 270 244 M 310 113 L 310 247 M 350 111 L 350 249 M 390 110 L 390 250 M 430 110 L 430 250 M 470 111 L 470 249 M 510 113 L 510 247 M 550 116 L 550 244" stroke="#252526" stroke-width="2" opacity="0.5"/>
+
+                        <!-- Left & Right Aluminum Joints -->
+                        <rect x="210" y="160" width="25" height="40" rx="4" fill="url(#metal-grad)" />
+                        <rect x="565" y="160" width="25" height="40" rx="4" fill="url(#metal-grad)" />
+
+                        <!-- Visor Base Frame with Drop Shadow -->
+                        <path d="M 220 170 C 220 130, 260 90, 400 90 C 540 90, 580 130, 580 170 C 580 220, 530 270, 400 270 C 270 270, 220 220, 220 170 Z" fill="url(#metal-grad)" filter="url(#shadow)"/>
+
+                        <!-- Glossy Glass Visor Shield -->
+                        <path d="M 226 170 C 226 135, 262 96, 400 96 C 538 96, 574 135, 574 170 C 574 214, 526 264, 400 264 C 274 264, 226 214, 226 170 Z" fill="url(#visor-grad)" stroke="url(#glow-border)" stroke-width="1.5"/>
+
+                        <!-- Left and Right Dual Lens Displays (Inside Visor) -->
+                        <ellipse cx="320" cy="175" rx="75" ry="55" fill="url(#lens-glow-left)" />
+                        <ellipse cx="320" cy="175" rx="60" ry="42" stroke="rgba(0, 242, 254, 0.4)" stroke-width="1" stroke-dasharray="4,8" />
+                        <ellipse cx="320" cy="175" rx="45" ry="32" stroke="rgba(0, 242, 254, 0.6)" stroke-width="1.5" />
+                        
+                        <ellipse cx="480" cy="175" rx="75" ry="55" fill="url(#lens-glow-right)" />
+                        <ellipse cx="480" cy="175" rx="60" ry="42" stroke="rgba(155, 81, 224, 0.4)" stroke-width="1" stroke-dasharray="4,8" />
+                        <ellipse cx="480" cy="175" rx="45" ry="32" stroke="rgba(155, 81, 224, 0.6)" stroke-width="1.5" />
+
+                        <!-- Lens Centers (Aperture Glass) -->
+                        <circle cx="320" cy="175" r="8" fill="#000000" stroke="#00f2fe" stroke-width="2"/>
+                        <circle cx="480" cy="175" r="8" fill="#000000" stroke="#9b51e0" stroke-width="2"/>
+
+                        <!-- Curved Glass Reflections & Highlight Curves -->
+                        <path d="M 250 130 C 310 110, 490 110, 550 130" stroke="rgba(255, 255, 255, 0.25)" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 270 115 C 320 106, 480 106, 530 115" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1" stroke-linecap="round"/>
+                        <path d="M 235 180 C 240 215, 270 245, 330 255" stroke="rgba(0, 242, 254, 0.2)" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <path d="M 565 180 C 560 215, 530 245, 470 255" stroke="rgba(155, 81, 224, 0.2)" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+                        <!-- Sleek Front Sensor Array Nodes -->
+                        <circle cx="255" cy="170" r="3" fill="#111111" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                        <circle cx="360" cy="115" r="2.5" fill="#111111" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                        <circle cx="440" cy="115" r="2.5" fill="#111111" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                        <circle cx="545" cy="170" r="3" fill="#111111" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                        <circle cx="400" cy="254" r="4" fill="#0c0c0d" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Engineering Masterpiece</span>
+                    <h2 class="section-title">Designed to amaze. Built to perform.</h2>
+                    <p class="section-desc">Every element is a breakthrough in tech engineering and material art.</p>
+                </div>
+
+                <!-- Bento Grid Layout -->
+                <div class="bento-grid">
+                    <!-- Bento item 1 (Large, displays) -->
+                    <div class="bento-item bento-large card-display">
+                        <div class="bento-content">
+                            <span class="card-tag">Dual Micro-OLED</span>
+                            <h3>23 Million Pixels.</h3>
+                            <p>More pixels than a 4K TV for each eye. Text is incredibly sharp, and colors are breathtakingly realistic.</p>
+                        </div>
+                        <div class="bento-visual">
+                            <div class="pixel-grid-animation">
+                                <div class="pixel-ring ring-1"></div>
+                                <div class="pixel-ring ring-2"></div>
+                                <div class="pixel-ring ring-3"></div>
+                                <div class="glowing-center-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento item 2 (Medium, chip performance) -->
+                    <div class="bento-item bento-medium card-chip">
+                        <div class="bento-content">
+                            <span class="card-tag">Processing</span>
+                            <h3>Aero G1 + R1 dual chip.</h3>
+                            <p>The G1 chip handles heavy rendering, while the R1 chip processes 12 cameras and 5 sensors with virtually zero lag.</p>
+                        </div>
+                        <div class="bento-visual">
+                            <div class="chip-graphic">
+                                <div class="chip-square">
+                                    <span>G1</span>
+                                </div>
+                                <div class="chip-square secondary-chip">
+                                    <span>R1</span>
+                                </div>
+                                <div class="connection-lines"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento item 3 (Medium, material) -->
+                    <div class="bento-item bento-medium card-material">
+                        <div class="bento-content">
+                            <span class="card-tag">Materials</span>
+                            <h3>Aerospace Titanium.</h3>
+                            <p>A custom-molded alloy shell that provides exceptional structural integrity while keeping the weight down to a mere 290 grams.</p>
+                        </div>
+                        <div class="bento-visual">
+                            <div class="material-mesh">
+                                <svg width="150" height="150" viewBox="0 0 100 100" fill="none">
+                                    <path d="M50 10 L90 30 L90 70 L50 90 L10 70 L10 30 Z" stroke="url(#titanium-grad)" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M50 10 L50 90 M10 30 L90 70 M90 30 L10 70" stroke="url(#titanium-grad)" stroke-width="0.75" opacity="0.4"/>
+                                    <circle cx="50" cy="50" r="15" stroke="url(#titanium-grad)" stroke-width="1"/>
+                                    <defs>
+                                        <linearGradient id="titanium-grad" x1="0" y1="0" x2="100" y2="100">
+                                            <stop stop-color="#fff"/>
+                                            <stop offset="0.5" stop-color="#86868b"/>
+                                            <stop offset="1" stop-color="#3a3a3c"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento item 4 (Large, controls) -->
+                    <div class="bento-item bento-large card-control">
+                        <div class="bento-content">
+                            <span class="card-tag">Intuitive Control</span>
+                            <h3>Control with a glance. Or a tap.</h3>
+                            <p>Precision eye tracking, high-speed camera gestures, and dictation voice commands let you navigate without controllers.</p>
+                        </div>
+                        <div class="bento-visual">
+                            <div class="gesture-hand-visual">
+                                <div class="pulsing-wave ring-w1"></div>
+                                <div class="pulsing-wave ring-w2"></div>
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gesture-icon">
+                                    <path d="M18 13v-2a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v3" />
+                                    <path d="M20 15a4 4 0 0 1-4 4H12a6 6 0 0 1-6-6V9a2 2 0 0 1 4 0v3" />
+                                    <path d="M10 11V6a2 2 0 0 1 4 0v5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Section - AeroOS -->
+        <section class="software-section" id="aeroos">
+            <div class="container">
+                <div class="software-grid">
+                    <div class="software-info">
+                        <span class="software-eyebrow">Operating System</span>
+                        <h2 class="software-title">AeroOS. Infinite Workspace.</h2>
+                        <p class="software-desc">
+                            AeroOS creates a spatial desktop around you. Open multiple web browsers, coding editors, 
+                            and spatial screens right in mid-air. Move, scale, and stack them in three dimensions.
+                        </p>
+                        <ul class="software-features-list">
+                            <li><strong>Fluid Multitasking:</strong> Pin apps in your room, and they remain precisely where you left them.</li>
+                            <li><strong>Spatial Audio Sync:</strong> Sound comes directly from the direction of each app screen.</li>
+                            <li><strong>Shared Spaces:</strong> Collaborate with remote coworkers who appear as digital avatars.</li>
+                        </ul>
+                    </div>
+
+                    <!-- CSS Floating Spatial Dashboard Illustration -->
+                    <div class="software-visual">
+                        <div class="spatial-desktop-simulation">
+                            <div class="workspace-screen screen-editor animate-float-slow">
+                                <div class="screen-header">
+                                    <div class="window-dot red"></div>
+                                    <div class="window-dot yellow"></div>
+                                    <div class="window-dot green"></div>
+                                    <span class="window-title">App.js</span>
+                                </div>
+                                <div class="screen-body">
+                                    <pre class="code-snippet"><code><span class="code-keyword">const</span> app = <span class="code-func">createWorkspace</span>();
+app.scale(<span class="code-num">1.2</span>);
+app.pinToSpatialDesk(<span class="code-string">'front'</span>);
+<span class="code-comment">// Ready to build...</span></code></pre>
+                                </div>
+                            </div>
+                            
+                            <div class="workspace-screen screen-preview animate-float-medium">
+                                <div class="screen-header">
+                                    <div class="window-dot red"></div>
+                                    <div class="window-dot yellow"></div>
+                                    <div class="window-dot green"></div>
+                                    <span class="window-title">Preview</span>
+                                </div>
+                                <div class="screen-body preview-body">
+                                    <div class="preview-chart">
+                                        <div class="bar bar-1"></div>
+                                        <div class="bar bar-2"></div>
+                                        <div class="bar bar-3"></div>
+                                        <div class="bar bar-4"></div>
+                                    </div>
+                                    <p class="preview-label">Render Rate: 90fps</p>
+                                </div>
+                            </div>
+
+                            <div class="workspace-screen screen-call animate-float-fast">
+                                <div class="call-avatar">K</div>
+                                <div class="call-info">
+                                    <p class="call-name">Kumar (Co-founder)</p>
+                                    <span class="call-status">Connected</span>
+                                </div>
+                                <div class="audio-wave">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specs Tech Grid -->
+        <section class="specs-section" id="specs">
+            <div class="container">
+                <div class="specs-header">
+                    <h2 class="specs-title">Technical Specifications</h2>
+                </div>
+                <div class="specs-grid">
+                    <div class="specs-col">
+                        <h4 class="specs-cat">Display</h4>
+                        <ul class="specs-list">
+                            <li>
+                                <strong>Optics</strong>
+                                <span>Dual Micro-OLED lenses, 90Hz refresh rate</span>
+                            </li>
+                            <li>
+                                <strong>Resolution</strong>
+                                <span>23 million total pixels, 3D spatial visual system</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="specs-col">
+                        <h4 class="specs-cat">Processor</h4>
+                        <ul class="specs-list">
+                            <li>
+                                <strong>Primary Engine</strong>
+                                <span>Aero G1 custom CPU/GPU (3nm architecture)</span>
+                            </li>
+                            <li>
+                                <strong>Sensor Core</strong>
+                                <span>R1 real-time processing engine, 12ms latency</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="specs-col">
+                        <h4 class="specs-cat">Sensors & Cameras</h4>
+                        <ul class="specs-list">
+                            <li>
+                                <strong>Inputs</strong>
+                                <span>12 Cameras, 5 Sensors, 6 High-fidelity microphones</span>
+                            </li>
+                            <li>
+                                <strong>Tracking</strong>
+                                <span>LiDAR depth map, eye tracking, hand gestures</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="specs-col">
+                        <h4 class="specs-cat">Weight & Audio</h4>
+                        <ul class="specs-list">
+                            <li>
+                                <strong>Weight</strong>
+                                <span>290 grams (ultra-light comfort strap)</span>
+                            </li>
+                            <li>
+                                <strong>Spatial Audio</strong>
+                                <span>Dual-driver audio pods with personalized HRTF</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Waitlist Section -->
+        <section class="cta-section" id="preorder">
+            <div class="container">
+                <div class="cta-card">
+                    <h2 class="cta-title">Experience the future today.</h2>
+                    <p class="cta-desc">Be the first to step into the spatial ecosystem. Join our priority developer waitlist and reserve your AeroGlass Pro.</p>
+                    <form class="cta-form" id="waitlist-form" onsubmit="event.preventDefault(); alert('Success! You are on the AeroGlass list.');">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email address" required aria-label="Email address" id="waitlist-email">
+                            <button type="submit" class="btn btn-primary" id="waitlist-submit">Reserve</button>
+                        </div>
+                    </form>
+                    <p class="cta-meta">Estimated delivery starting early Fall 2026. Fully refundable reservation deposit.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h5>Product</h5>
+                    <a href="#features">Features</a>
+                    <a href="#aeroos">AeroOS</a>
+                    <a href="#specs">Specifications</a>
+                    <a href="#preorder">Buy AeroGlass</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Developer</h5>
+                    <a href="#">SDK Download</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Spatial API</a>
+                    <a href="#">Forums</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="#">About Aero</a>
+                    <a href="#">Newsroom</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aero Space Systems Inc. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
