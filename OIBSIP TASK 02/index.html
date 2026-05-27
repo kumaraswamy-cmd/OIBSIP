@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumara Swamy | Portfolio - Aspiring Software Engineer</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-accent">&lt;</span>KS<span class="logo-accent"> /&gt;</span>
+            </a>
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#achievements" class="nav-item">Achievements</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Introduction Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to my space</span>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Kumara Swamy</span></h1>
+                    <h2 class="hero-tagline">
+                        I am an <span class="typing-text" id="typingText"></span>
+                    </h2>
+                    <p class="hero-description">
+                        Aspiring Software Engineer interested in Full Stack Development, UI/UX Design, and AI-assisted product engineering with experience in building user-focused web applications and rapid prototypes.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="resume.pdf" download class="btn btn-outline" id="downloadResume">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="profile-glow"></div>
+                    <div class="profile-card">
+                        <!-- Custom Inline SVG Coder Graphic (Fallback or primary avatar) -->
+                        <!-- If you want to use your own photo, replace the svg below with: -->
+                        <!-- <img src="profile.jpg" alt="Kumara Swamy" class="profile-img"> -->
+                        <svg class="profile-img-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#6366F1" />
+                                    <stop offset="100%" stop-color="#A855F7" />
+                                </linearGradient>
+                                <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#1E293B" />
+                                    <stop offset="100%" stop-color="#0F172A" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Circle Background -->
+                            <circle cx="100" cy="100" r="95" fill="url(#avatarGrad)" fill-opacity="0.15" stroke="url(#avatarGrad)" stroke-width="2"/>
+                            
+                            <!-- Minimalist Coding Laptop Screen -->
+                            <rect x="50" y="80" width="100" height="70" rx="6" fill="url(#screenGrad)" stroke="#475569" stroke-width="2"/>
+                            <!-- Laptop Keyboard Base -->
+                            <path d="M40 150H160C163 150 165 152 165 155V158H35V155C35 152 37 150 40 150Z" fill="#334155"/>
+                            <!-- Screen Code Lines Mockup -->
+                            <rect x="60" y="95" width="40" height="6" rx="3" fill="#6366F1"/>
+                            <rect x="60" y="107" width="60" height="6" rx="3" fill="#A855F7"/>
+                            <rect x="60" y="119" width="30" height="6" rx="3" fill="#10B981"/>
+                            <rect x="65" y="131" width="50" height="6" rx="3" fill="#F59E0B"/>
+                            
+                            <!-- Code Tag Graphic floating -->
+                            <path d="M25 60L15 70L25 80" stroke="#6366F1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M175 60L185 70L175 80" stroke="#A855F7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                            <!-- Bracket Graphic floating -->
+                            <text x="92" y="55" fill="#6366F1" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="28" opacity="0.8">{ }</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-info-card">
+                        <div class="info-icon-wrapper">
+                            <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                            </svg>
+                        </div>
+                        <h3>Education</h3>
+                        <h4 class="edu-college">MVGR College of Engineering</h4>
+                        <p class="edu-degree">Bachelor of Technology in Computer Science and Engineering</p>
+                        <div class="edu-meta">
+                            <span class="edu-location">Vizianagaram, AP</span>
+                            <span class="edu-duration">2024 — 2028</span>
+                        </div>
+                        <div class="edu-performance">
+                            <span class="perf-label">CGPA</span>
+                            <span class="perf-value">8.1</span>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3 class="about-subheading">Passionate Coder & Design Enthusiast</h3>
+                        <p>
+                            I am a Computer Science undergraduate student with a strong drive for building digital solutions. My studies at MVGR College of Engineering focus on solid foundational principles, while my passion projects focus on applying these tools directly in user-centered spaces.
+                        </p>
+                        <p>
+                            I bridges the gap between pure engineering and aesthetic interface layouts. My interest lies heavily in Full Stack Web Development, creating seamless backend flows alongside sleek, intuitive frontends. I also experiment with prompt engineering and AI-assisted workflows to accelerate development and optimize performance.
+                        </p>
+                        <div class="quick-facts">
+                            <div class="fact-item">
+                                <span class="fact-icon">✓</span>
+                                <span>Problem Solver at Heart</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-icon">✓</span>
+                                <span>UX-focused Engineering</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-icon">✓</span>
+                                <span>Continuous Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section section-padding scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <p class="section-desc">The technologies, tools, and methodologies I work with to bring ideas to life.</p>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-category-card">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 18L22 12L16 6M8 6L2 12L8 18"/>
+                                </svg>
+                            </div>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge highlight-lang">Python</span>
+                            <span class="skill-badge highlight-lang">HTML5</span>
+                            <span class="skill-badge highlight-lang">CSS3</span>
+                            <span class="skill-badge highlight-lang">JavaScript (ES6+)</span>
+                        </div>
+                    </div>
+
+                    <!-- Technologies & Tools -->
+                    <div class="skill-category-card">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+                                    <line x1="16" y1="8" x2="2" y2="22"/>
+                                    <line x1="17.5" y1="15" x2="9" y2="15"/>
+                                </svg>
+                            </div>
+                            <h3>Technologies & Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge">Firebase</span>
+                            <span class="skill-badge">MongoDB</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">Figma</span>
+                            <span class="skill-badge">AI Tools</span>
+                            <span class="skill-badge">Prompt Engineering</span>
+                        </div>
+                    </div>
+
+                    <!-- Areas of Interest -->
+                    <div class="skill-category-card">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h3>Areas of Interest</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge">Full Stack Development</span>
+                            <span class="skill-badge">UI/UX Design</span>
+                            <span class="skill-badge">AI-assisted Development</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-category-card">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <h3>Key Strengths</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge">Problem Solving</span>
+                            <span class="skill-badge">Team Collaboration</span>
+                            <span class="skill-badge">Rapid Prototyping</span>
+                            <span class="skill-badge">Adaptive Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-desc">Here are a few select projects representing my development and styling workflow.</p>
+
+                <div class="projects-grid">
+                    <!-- Project 1: SchemeSathi -->
+                    <article class="project-card">
+                        <div class="project-img-placeholder scheme-sathi-bg">
+                            <div class="project-overlay">
+                                <a href="https://github.com/kumaraswamy-cmd" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="SchemeSathi Source Code">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tech-list">
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">SchemeSathi</h3>
+                            <p class="project-desc">
+                                A Firebase-powered web application designed to recommend government welfare schemes to citizens based on custom eligibility filters.
+                            </p>
+                            <ul class="project-points">
+                                <li>Implemented multi-criteria filtering using gender, income, and community parameters.</li>
+                                <li>Designed a modern, responsive UI focused on making scheme discovery quick and simple.</li>
+                                <li>Integrated real-time database functions using Firebase for data storage and fetching.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: EMI Calculator -->
+                    <article class="project-card">
+                        <div class="project-img-placeholder emi-calculator-bg">
+                            <div class="project-overlay">
+                                <a href="https://github.com/kumaraswamy-cmd" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="EMI Calculator Source Code">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tech-list">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                            </div>
+                            <h3 class="project-title">Apple-Inspired EMI Calculator</h3>
+                            <p class="project-desc">
+                                A web application that computes loan EMIs and displays principal-interest ratios with a premium Apple-inspired minimalist design.
+                            </p>
+                            <ul class="project-points">
+                                <li>Calculates monthly EMI, total interest payable, and displays tenure schedules clearly.</li>
+                                <li>Features interactive split visualizations representing principal versus interest payments.</li>
+                                <li>Backed by a clean, local Node.js fallback server for local hosting stability.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications Section -->
+        <section id="achievements" class="achievements-section section-padding scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Achievements & <span class="highlight">Activities</span></h2>
+                
+                <div class="achievements-grid">
+                    <!-- Achievements Timeline/Cards -->
+                    <div class="achievements-card-container">
+                        <div class="ach-card">
+                            <span class="ach-icon">🏆</span>
+                            <div class="ach-content">
+                                <h3>Google Developer Group Hackathon</h3>
+                                <p class="ach-detail">Achieved a Top 6 position through collaborative technical problem-solving and rapid product prototyping.</p>
+                            </div>
+                        </div>
+
+                        <div class="ach-card">
+                            <span class="ach-icon">🙋‍♂️</span>
+                            <div class="ach-content">
+                                <h3>Technical Volunteer - HackerRank Hackathon</h3>
+                                <p class="ach-detail">Assisted in coordinating technical infrastructure and student support during a major campus coding event.</p>
+                            </div>
+                        </div>
+
+                        <div class="ach-card">
+                            <span class="ach-icon">📈</span>
+                            <div class="ach-content">
+                                <h3>GitHub Contribution Streak</h3>
+                                <p class="ach-detail">Maintained a continuous 3-month coding streak, pushing code daily to build discipline and project momentum.</p>
+                            </div>
+                        </div>
+
+                        <div class="ach-card">
+                            <span class="ach-icon">📐</span>
+                            <div class="ach-content">
+                                <h3>UI/UX Wireframing Experience</h3>
+                                <p class="ach-detail">Designed high-fidelity mockups in Figma, reviewed and approved by Thiranex during internship evaluation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Block -->
+                    <div class="certifications-panel">
+                        <div class="cert-panel-glow"></div>
+                        <h3 class="cert-title">
+                            <svg class="cert-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88"/>
+                            </svg>
+                            Certifications
+                        </h3>
+                        <ul class="cert-list">
+                            <li>
+                                <div class="cert-bullet"></div>
+                                <div class="cert-info">
+                                    <h4>Python Essentials 1 & 2</h4>
+                                    <span class="cert-issuer">Cisco Networking Academy</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cert-bullet"></div>
+                                <div class="cert-info">
+                                    <h4>Quantum Computing Certification</h4>
+                                    <span class="cert-issuer">Qiskit / IBM Partner Program</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <p class="section-desc">Have a question or want to collaborate on a project? Feel free to drop a message.</p>
+
+                <div class="contact-grid">
+                    <!-- Contact Information Card -->
+                    <div class="contact-info-panel">
+                        <h3>Contact Information</h3>
+                        <p class="contact-intro">Reach out to me directly through any of the channels below.</p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:kumaraswamythale@gmail.com" class="contact-method-card">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="method-text">
+                                    <span class="method-label">Email Me</span>
+                                    <span class="method-val">kumaraswamythale@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+919392322867" class="contact-method-card">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="method-text">
+                                    <span class="method-label">Call Me</span>
+                                    <span class="method-val">+91 93923 22867</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-method-card">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="method-text">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-val">Vizianagaram, Andhra Pradesh</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Buttons -->
+                        <div class="social-links-container">
+                            <a href="https://github.com/kumaraswamy-cmd" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/kumaraswamy-t-" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="formName">Full Name</label>
+                            <input type="text" id="formName" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail">Email Address</label>
+                            <input type="email" id="formEmail" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubject">Subject</label>
+                            <input type="text" id="formSubject" name="subject" required placeholder="Let's build something cool!">
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Kumara Swamy. All Rights Reserved.</p>
+            <p class="footer-tag">Designed & Built with <span class="heart">♥</span> for Web Development Task 02</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
